@@ -1,11 +1,14 @@
+import ClickContext  from "./ClickContext";
 import CounterControls from "./CounterControls";
 import CounterDisplay from "./CounterDisplay";
 
 export default function ClickCounter() {
     return (
         <>
-        <CounterDisplay />
-        <CounterControlsrols />
+        <ClickContext>
+            <CounterDisplay />
+            <CounterControls />
+        </ClickContext>
         </>
     )
 }

@@ -1,6 +1,15 @@
+import { useContext } from "react"
+import ClickContext, { ClickCounterContext } from "./ClickContext"
+
 export default function CounterDisplay() {
-    return 
-    <>
-        counter display
-    </>
+
+    const { clickCounter } = useContext(ClickCounterContext);
+
+    return (
+        <>
+            <div>
+                clicks : {clickCounter}
+            </div>
+        </>
+    )
 }
