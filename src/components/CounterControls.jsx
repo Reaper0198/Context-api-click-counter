@@ -13,10 +13,15 @@ export default function CounterControls() {
         setClickCounter(prev => prev - 1);
     }
 
+    const resetCounter = () => {
+        setClickCounter(0);
+    }
+
     return (
         <div>
             <button onClick={increaseClick}>click me to increase</button>
             <button onClick={decreaseClick}>click me to decrease</button>
+            <button onClick={resetCounter}>click me to reset</button>
         </div>
     )
 }
