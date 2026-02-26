@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import ClickContext, { ClickCounterContext } from "./ClickContext"
+import { ClickCounterContext } from "./ClickContext"
 
 export default function CounterControls() {
 
@@ -15,8 +15,8 @@ export default function CounterControls() {
 
     return (
         <div>
-            <button onCanPlay={increaseClick}>click me to increase</button>
-            <button onCanPlay={decreaseClick}>click me to decrease</button>
+            <button onClick={increaseClick}>click me to increase</button>
+            <button onClick={decreaseClick}>click me to decrease</button>
         </div>
     )
 }

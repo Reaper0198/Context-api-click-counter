@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import ClickContext, { ClickCounterContext } from "./ClickContext"
+import { ClickCounterContext } from "./ClickContext"
 
 export default function CounterDisplay() {
 
